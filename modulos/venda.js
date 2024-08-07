@@ -12,7 +12,7 @@ const modelo = (id = proximoId) => {
     const idCorretor = parseInt(prompt("Digite o id do corretor: "));
     imovel.index();
     const idImovel = parseInt(prompt("Digite o id do imóvel: "));
-    if(cliente.show(idCliente) && corretor.show(idCorretor) && imovel.show(idImovel)){
+    if(cliente.show(idCliente) && corretor.show(idCorretor).idCorretora == imovel.show(idImovel).idCorretora){
         return {
             id,
             idCliente,
